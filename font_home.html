@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FONT</title>
+        <meta cahrset="utf-8">
+        <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/earlyaccess/kopubbatang.css" rel="stylesheet">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .content {
+                display: flex;
+            }
+
+            h1 {
+                text-align: center;
+                border: 1px solid white;
+                background-color: tomato;
+                color: white;
+                margin: 0px;
+                height: 50px;
+                padding-top: 20px;
+            }
+            #home_img {
+                width: 30px;
+                background-color: tomato;
+                padding-right: 10px;
+            }
+
+            nav {
+                border-right: 1px solid gray;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0px;
+            }
+            li {
+                font-size: 1rem;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            main {
+                padding: 10px;
+                flex-grow: 1;
+            }
+            aside {
+                border-left: 1px solid gray;
+            }
+
+            nav, aside {
+                padding: 10px;
+                flex-basis: 100px;
+                flex-shrink: 0;
+                background-color: powderblue;
+            }
+
+            @media (max-width: 600px) {
+                .content {
+                    flex-direction: column;
+                }
+                nav, aside {
+                    border: none;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    flex-basis: auto;
+                }
+                li {
+                    font-size: 0.7rem;
+                    padding-bottom: 5px;
+                }
+            }
+
+            .nanum_gothic{
+                font-family: "Nanum Gothic", monospace;
+            }
+            .jeju_gothic{
+                font-family: "Jeju Gothic", monospace;
+            }
+            .kopub_batang{
+                font-family: "KoPub Batang", monospace;
+            }
+            footer {
+                text-align: center;
+                background-color: tomato;
+                color: white;
+            }
+            a:link, a:visited{
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="font_home.html"><img id="home_img" src="home.png"></a>Font Test</h1>
+            </header>
+            <section class="content">
+                <nav>
+                    <ul>
+                        <li class="nanum_gothic"><a href="font_nanum.html">나눔고딕</a></li>
+                        <li class="jeju_gothic"><a href="font_jeju.html">제주고딕</a></li>
+                        <li class="kopub_batang"><a href="font_kopub.html">Kopub바탕</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    한글 폰트를 골라보세요. <br>
+                    <img src="rh5.jpeg" width=100%>
+                    와앙
+            
+                    <!-- <p class="jeju_gothic">
+                        안녕하세요. 박보경입니다 :)
+                        한글 폰트 확인! 제주고딕 폰트!
+                        # 크기 : 1rem (기본 16px)
+                    </p>
+            
+                    <p class="kopub_batang">
+                        안녕하세요. 박보경입니다 :)
+                        한글 폰트 확인! kopub바탕 폰트!
+                        # 크기 : 1rem (기본 16px)
+                    </p> -->
+                </main>
+                <aside>
+                    AD
+                </aside>
+            </section>
+            <footer>
+                @bogyeong
+            </footer>
+        </div>
+    </body>
+</html>
